@@ -1,4 +1,4 @@
-Scenario: Uma pessoa insere as informações sobre o seu salário
+Scenario: Uma pessoa insere as informacoes sobre o seu salario
 e pede o calculo dos impostos
 
 Given o usuario insira <SALARIO> no campo salario
@@ -8,9 +8,9 @@ And o sistema deve exibir o valor <IRRF> para o IRRF
 
 Examples:
 |SALARIO|INSS|IRRF|
-|1000|80|0|
-|2000|180|0|
-|3000|270|54|
-|4000|440|164.87|
-|5000|550|364.39|
-|6000|660|609.14|
+|1000.0|80.0|60.86|
+|2000.0|180.0|60.86|
+|3000.0|270.0|61.95|
+|4000.0|440.0|179.2|
+|5000.0|550.0|365.12|
+|6000.0|660.0|599.14|

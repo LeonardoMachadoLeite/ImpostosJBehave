@@ -22,12 +22,12 @@ public class StepsMapper {
 	
 	@Then("o sistema deve exibir o valor $INSS para o INSS")
 	public void compararINSS(@Named("INSS") double INSS) {
-		Assert.assertEquals(pessoa.getINSS(), INSS);
+		Assert.assertTrue(pessoa.getINSS() == INSS);
 	}
 	
 	@Then("o sistema deve exibir o valor $IRRF para o IRRF")
 	public void compararIRRF(@Named("IRRF") double IRRF) {
-		Assert.assertEquals(pessoa.getIRRF(), IRRF);
+		Assert.assertTrue(pessoa.getIRRF() == IRRF);
 	}
 	
 }

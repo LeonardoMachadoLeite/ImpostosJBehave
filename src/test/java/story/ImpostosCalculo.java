@@ -58,6 +58,7 @@ public class ImpostosCalculo  extends JUnitStory {
 		
 		return new MostUsefulConfiguration()
 				.useParameterControls(parameterControls)
+				.useTableTransformers(tableTransformers)
 				.useStoryReporterBuilder(storyReporterBuilder);
 	}
 	
